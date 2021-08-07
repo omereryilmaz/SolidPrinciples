@@ -25,12 +25,5 @@ namespace SingleResponsibility
 
             return totalPerimeter;
         }
-
-        // Sonuclari ekrana yazdir
-        public void PrintToConsole()
-        {
-            Console.WriteLine("Total Perimeter: " + totalPerimeter);
-        }
-
     }
 }

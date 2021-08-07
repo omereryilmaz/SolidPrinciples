@@ -19,8 +19,13 @@ namespace SingleResponsibility
             shapes.Add(rectangle);
 
             CalcTotalPerimeter calcPerimeter = new CalcTotalPerimeter(shapes);
-            calcPerimeter.TotalPerimeter();
-            calcPerimeter.PrintToConsole();
+
+            double totalPerimeter = calcPerimeter.TotalPerimeter();
+            string result = "Total Perimeter: " + totalPerimeter;
+
+            PrintResult printResult = new PrintResult(result);
+            printResult.ToConsole();
+            printResult.ToFile(@"D:\Reports", "CalcResult.txt");
         }
     }
 }
